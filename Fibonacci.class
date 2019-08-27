@@ -1,0 +1,23 @@
+public class Fibonacci {
+    public Fibonacci() {
+    }
+
+    public static void main(String[] var0) {
+        int[] var1 = new int[20];
+        int var2 = 0;
+        var1[0] = 1;
+        var1[1] = 1;
+
+        int var3;
+        for(var3 = 2; var3 < var1.length; ++var3) {
+            var1[var3] = var1[var3 - 2] + var1[var3 - 1];
+            System.out.println(var1[var3]);
+        }
+
+        for(var3 = 2; var3 < var1.length; var3 += 3) {
+            var2 += var1[var3];
+        }
+
+        System.out.println(var2);
+    }
+}
